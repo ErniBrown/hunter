@@ -8,7 +8,6 @@ project(download-czmq)
 
 #set(THREADS_PREFER_PTHREAD_FLAG ON)
 
-#hunter_add_package(ZeroMQ)
 hunter_add_package(czmq)
 find_package(czmq REQUIRED CONFIG)
 
