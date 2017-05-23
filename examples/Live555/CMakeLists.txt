@@ -15,5 +15,8 @@ find_package(Live555 REQUIRED)
 
 add_executable(foo foo.cpp)
 target_link_libraries(foo Live555::LiveMedia)
+target_link_libraries(foo Live555::Groupsock)
+target_link_libraries(foo Live555::UsageEnvironment)
+target_link_libraries(foo Live555::BasicUsageEnvironment)
 
 
