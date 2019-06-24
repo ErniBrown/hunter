@@ -21,6 +21,17 @@ hunter_add_version(
     6ff3f3a7facae861c7687f27055fd9ced7c7fe10
 )
 
+hunter_add_version(
+    PACKAGE_NAME
+    gst_plugins_good
+    VERSION
+    1.14.5
+    URL
+    "https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.14.5.tar.xz"
+    SHA1
+    ea0bc9e4d9a87eb4112eddd6e0638d4cec14003b
+)
+
 hunter_cmake_args(
     gst_plugins_good
     CMAKE_ARGS
@@ -68,7 +79,6 @@ hunter_download(
     "lib/gstreamer-1.0/libgstmultifile.la"
     "lib/gstreamer-1.0/libgstmultipart.la"
     "lib/gstreamer-1.0/libgstnavigationtest.la"
-    "lib/gstreamer-1.0/libgstoss4audio.la"
     "lib/gstreamer-1.0/libgstossaudio.la"
     "lib/gstreamer-1.0/libgstreplaygain.la"
     "lib/gstreamer-1.0/libgstrtp.la"

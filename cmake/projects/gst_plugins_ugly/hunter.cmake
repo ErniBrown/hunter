@@ -21,10 +21,21 @@ hunter_add_version(
     a01ab3ac71bdd0d52e4a120349a8f26fde48f317
 )
 
+hunter_add_version(
+    PACKAGE_NAME
+    gst_plugins_ugly
+    VERSION
+    1.14.5
+    URL
+    "https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.14.5.tar.xz"
+    SHA1
+    af7dbbebda827bbddc848e5e6c4e5bd5ddfd3a08
+)
+
 hunter_cmake_args(
     gst_plugins_ugly
     CMAKE_ARGS
-    DEPENDS_ON_PACKAGES=gst_plugins_base
+    DEPENDS_ON_PACKAGES=gst_plugins_base;x264
     DEPENDS_ON_PKGCONFIGS=gstreamer-plugins-base-1.0 # ???
 )
 
@@ -40,6 +51,7 @@ hunter_download(
     "lib/gstreamer-1.0/libgstasf.la"
     "lib/gstreamer-1.0/libgstdvdlpcmdec.la"
     "lib/gstreamer-1.0/libgstdvdsub.la"
-    "lib/gstreamer-1.0/libgstrmdemux.la"
+    "lib/gstreamer-1.0/libgstrealmedia.la"
+    "lib/gstreamer-1.0/libgstx264.la"
     "lib/gstreamer-1.0/libgstxingmux.la"
 )
